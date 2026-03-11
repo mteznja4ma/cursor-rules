@@ -1,5 +1,5 @@
 ---
-globs: "{**/*.go,**/go.mod,**/go.sum}"
+globs: "**/*.go"
 alwaysApply: false
 ---
 
@@ -23,16 +23,12 @@ func NewServer(opts ...Option) *Server {
 }
 ```
 
-## Small Interfaces
-
-Define interfaces where they are used, not where they are implemented.
-
 ## Dependency Injection
-
-Use constructor functions to inject dependencies:
 
 ```go
 func NewUserService(repo UserRepository, logger Logger) *UserService {
     return &UserService{repo: repo, logger: logger}
 }
 ```
+
+- Define interfaces at the point of consumption, not implementation

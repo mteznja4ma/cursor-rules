@@ -1,32 +1,19 @@
 ---
-description: Reusable design patterns like repository pattern and API response format
+description: Preferred design patterns for data access and API responses
 alwaysApply: false
 ---
 
-# Common Patterns
+# Patterns
 
-## Skeleton Projects
+## Repository Pattern
 
-When implementing new functionality:
-1. Search for battle-tested skeleton projects
-2. Evaluate options for security, extensibility, and relevance
-3. Clone best match as foundation
-4. Iterate within proven structure
+- Encapsulate data access behind an interface (findAll, findById, create, update, delete)
+- Business logic depends on the interface, not the storage implementation
 
-## Design Patterns
+## API Response Envelope
 
-### Repository Pattern
-
-Encapsulate data access behind a consistent interface:
-- Define standard operations: findAll, findById, create, update, delete
-- Concrete implementations handle storage details (database, API, file, etc.)
-- Business logic depends on the abstract interface, not the storage mechanism
-- Enables easy swapping of data sources and simplifies testing with mocks
-
-### API Response Format
-
-Use a consistent envelope for all API responses:
-- Include a success/status indicator
-- Include the data payload (nullable on error)
-- Include an error message field (nullable on success)
-- Include metadata for paginated responses (total, page, limit)
+All API responses use a consistent envelope:
+- `success` / `status` indicator
+- `data` payload (nullable on error)
+- `error` message (nullable on success)
+- `meta` for pagination (total, page, limit)

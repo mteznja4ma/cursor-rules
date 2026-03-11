@@ -1,22 +1,13 @@
 ---
-globs: "{**/*.go,**/go.mod,**/go.sum}"
+globs: "**/*.go"
 alwaysApply: false
 ---
 
 # Go Coding Style
 
-## Formatting
-
-- **gofmt** and **goimports** are mandatory - no style debates
-
-## Design Principles
-
 - Accept interfaces, return structs
 - Keep interfaces small (1-3 methods)
-
-## Error Handling
-
-Always wrap errors with context:
+- Always wrap errors with context:
 
 ```go
 if err != nil {

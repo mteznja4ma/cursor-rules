@@ -1,29 +1,20 @@
 ---
-globs: "{**/*.go,**/go.mod,**/go.sum}"
+globs: "**/*.go"
 alwaysApply: false
 ---
 
 # Go Security
 
-## Secret Management
+- Read secrets from environment, never hardcode:
 
 ```go
-apiKey := os.Getenv("OPENAI_API_KEY")
+apiKey := os.Getenv("API_KEY")
 if apiKey == "" {
-    log.Fatal("OPENAI_API_KEY not configured")
+    log.Fatal("API_KEY not configured")
 }
 ```
 
-## Security Scanning
-
-- Use **gosec** for static security analysis:
-  ```bash
-  gosec ./...
-  ```
-
-## Context & Timeouts
-
-Always use `context.Context` for timeout control:
+- Always use `context.Context` with timeouts for external calls:
 
 ```go
 ctx, cancel := context.WithTimeout(ctx, 5*time.Second)

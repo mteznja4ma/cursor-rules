@@ -1,19 +1,18 @@
 # cursor-rules
 
-Cursor remote rules stored in `.cursor/rules/` as `.mdc` files.
+Remote rules for [Cursor](https://cursor.com). Import via `Cursor Settings → Rules, Commands → + Add Rule → Remote Rule (Github)`.
 
-## Always Apply
-- `common-coding-style.mdc` — Coding style, immutability, error handling, input validation
+## Rules
 
-## Apply Intelligently
-- `common-testing.mdc` — TDD workflow and coverage requirements
-- `common-security.mdc` — Security checklist and secret management
-- `common-git-workflow.mdc` — Commit message format and PR conventions
-- `common-development-workflow.mdc` — Feature implementation workflow
-- `common-patterns.mdc` — Repository pattern, API response format
-
-## Apply to Specific Files (`**/*.go, **/go.mod, **/go.sum`)
-- `golang-coding-style.mdc` — Go formatting, interfaces, error wrapping
-- `golang-patterns.mdc` — Functional options, DI, small interfaces
-- `golang-security.mdc` — Secret management, gosec, context timeouts
-- `golang-testing.mdc` — Table-driven tests, race detection, coverage
+| Rule | Type | Scope |
+|------|------|-------|
+| `common-coding-style` | Always Apply | All files |
+| `common-testing` | Apply Intelligently | When writing/modifying tests |
+| `common-security` | Apply Intelligently | When touching auth, secrets, or user input |
+| `common-git-workflow` | Apply Intelligently | When committing or creating PRs |
+| `common-development-workflow` | Apply Intelligently | When planning or building features |
+| `common-patterns` | Apply Intelligently | When designing data access or APIs |
+| `golang-coding-style` | Specific Files | `**/*.go` |
+| `golang-patterns` | Specific Files | `**/*.go` |
+| `golang-security` | Specific Files | `**/*.go` |
+| `golang-testing` | Specific Files | `**/*.go` |
