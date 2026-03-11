@@ -1,3 +1,8 @@
+---
+description: Tool hook usage and permission safety guidelines
+alwaysApply: true
+---
+
 # Hooks System
 
 ## Hook Types

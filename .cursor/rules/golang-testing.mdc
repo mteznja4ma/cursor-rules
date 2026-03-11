@@ -1,12 +1,10 @@
 ---
-paths:
-  - "**/*.go"
-  - "**/go.mod"
-  - "**/go.sum"
+description: Go testing strategy including race and coverage checks
+globs: "{**/*.go,**/go.mod,**/go.sum}"
+alwaysApply: false
 ---
-# Go Testing
 
-> This file extends [common/testing.md](../common/testing.md) with Go specific content.
+# Go Testing
 
 ## Framework
 

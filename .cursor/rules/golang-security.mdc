@@ -1,12 +1,10 @@
 ---
-paths:
-  - "**/*.go"
-  - "**/go.mod"
-  - "**/go.sum"
+description: Go-specific security and resilience practices
+globs: "{**/*.go,**/go.mod,**/go.sum}"
+alwaysApply: false
 ---
-# Go Security
 
-> This file extends [common/security.md](../common/security.md) with Go specific content.
+# Go Security
 
 ## Secret Management
 

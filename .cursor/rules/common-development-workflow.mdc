@@ -1,6 +1,11 @@
+---
+description: End-to-end feature implementation workflow before git operations
+alwaysApply: true
+---
+
 # Development Workflow
 
-> This file extends [common/git-workflow.md](./git-workflow.md) with the full feature development process that happens before git operations.
+> This rule extends git workflow expectations with full feature development steps that happen before git operations.
 
 The Feature Implementation Workflow describes the development pipeline: research, planning, TDD, code review, and then committing to git.
 
@@ -34,4 +39,4 @@ The Feature Implementation Workflow describes the development pipeline: research
 4. **Commit & Push**
    - Detailed commit messages
    - Follow conventional commits format
-   - See [git-workflow.md](./git-workflow.md) for commit message format and PR process
+   - Apply git workflow standards for commit message format and PR process

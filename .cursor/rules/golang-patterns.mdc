@@ -1,12 +1,10 @@
 ---
-paths:
-  - "**/*.go"
-  - "**/go.mod"
-  - "**/go.sum"
+description: Reusable Go patterns and dependency management practices
+globs: "{**/*.go,**/go.mod,**/go.sum}"
+alwaysApply: false
 ---
-# Go Patterns
 
-> This file extends [common/patterns.md](../common/patterns.md) with Go specific content.
+# Go Patterns
 
 ## Functional Options
 

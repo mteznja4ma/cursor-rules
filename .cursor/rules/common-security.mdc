@@ -1,3 +1,8 @@
+---
+description: Secure coding and pre-commit security checklist
+alwaysApply: true
+---
+
 # Security Guidelines
 
 ## Mandatory Security Checks
