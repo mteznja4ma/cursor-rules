@@ -1,5 +1,4 @@
 ---
-description: Go coding style and idioms
 globs: "{**/*.go,**/go.mod,**/go.sum}"
 alwaysApply: false
 ---
@@ -24,7 +23,3 @@ if err != nil {
     return fmt.Errorf("failed to create user: %w", err)
 }
 ```
-
-## Reference
-
-See skill: `golang-patterns` for comprehensive Go idioms and patterns.

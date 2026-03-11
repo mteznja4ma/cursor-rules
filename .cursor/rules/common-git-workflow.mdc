@@ -1,6 +1,6 @@
 ---
-description: Commit and pull request workflow conventions
-alwaysApply: true
+description: Commit message format and pull request workflow conventions
+alwaysApply: false
 ---
 
 # Git Workflow
@@ -13,8 +13,6 @@ alwaysApply: true
 ```
 
 Types: feat, fix, refactor, docs, test, chore, perf, ci
-
-Note: Attribution disabled globally via `~/.claude/settings.json`.
 
 ## Pull Request Workflow
 

@@ -1,6 +1,6 @@
 ---
-description: Secure coding and pre-commit security checklist
-alwaysApply: true
+description: Security checklist and secret management guidelines for pre-commit review
+alwaysApply: false
 ---
 
 # Security Guidelines
@@ -28,7 +28,6 @@ Before ANY commit:
 
 If security issue found:
 1. STOP immediately
-2. Use **security-reviewer** agent
-3. Fix CRITICAL issues before continuing
-4. Rotate any exposed secrets
-5. Review entire codebase for similar issues
+2. Fix CRITICAL issues before continuing
+3. Rotate any exposed secrets
+4. Review entire codebase for similar issues
